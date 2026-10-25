@@ -1,0 +1,109 @@
+---
+title: "Listings in Quarto"
+subtitle: "What Listings are, how they work, and how I use them for my portfolio"
+listing:
+  - id: project-grid
+    contents: projects/*.qmd
+    type: grid
+    sort: "order"
+    categories: unnumbered
+    fields: [image, title, description, categories]
+    grid-columns: 3
+    image-height: 160px
+    feed: false
+  - id: project-table
+    contents: projects/*.qmd
+    type: table
+    sort: "order"
+    fields: [title, categories]
+    field-display-names:
+      title: "Project"
+      categories: "Topics"
+    filter-ui: false
+    sort-ui: false
+---
+
+## What is a Listing?
+
+A Listing is a Quarto feature that builds a page of links to other pages **automatically**. Instead of hand typing a list of projects and updating it every time something new is added, you point the Listing at a folder. Quarto reads each file's title, description, image, and categories, then builds the cards for you.
+
+For a portfolio, that means adding a new project is as simple as dropping a new `.qmd` file into the `projects/` folder. The cards, the filters, and the sorting all update on the next render.
+
+## My projects (a live Listing)
+
+Click a category on the right to filter, or click any card to open the full write up.
+
+::: {#project-grid}
+:::
+
+## How this Listing is built
+
+### 1. Each project is its own page
+
+Every card above comes from a file in `projects/`. The YAML at the top is what the Listing reads:
+
+```{.yaml filename="projects/google-ads.qmd"}
+---
+title: "Google Ads Turnaround: 3x Monthly Leads"
+description: "Rebuilding a lead generation account by fixing the bidding strategy order."
+image: images/google-ads.png
+categories: [Google Ads, PPC, Lead Generation]
+order: 2
+---
+```
+
+### 2. The Listing page tells Quarto what to collect
+
+The YAML on this page sets where to look and how to display what it finds:
+
+```{.yaml filename="listings.qmd"}
+listing:
+  - id: project-grid
+    contents: projects/*.qmd     # every .qmd file in the folder
+    type: grid                   # cards in columns
+    sort: "order"                # uses the order field in each file
+    categories: unnumbered       # adds the clickable category filter
+    fields: [image, title, description, categories]
+    grid-columns: 3
+```
+
+### 3. A div marks where it appears
+
+The `id` connects the settings to a spot on the page, so one page can hold more than one Listing:
+
+```{.markdown}
+::: {#project-grid}
+:::
+```
+
+## Three Listing types
+
+The same project files can be shown in different ways just by changing `type`:
+
+| Type | Best for | What it looks like |
+|:--|:--|:--|
+| `default` | Blogs and news | A vertical list with a thumbnail and summary |
+| `grid` | Portfolios | Cards in columns, as above |
+| `table` | Quick scanning | Rows with sortable columns, as below |
+
+Here's the same set of projects as a table Listing:
+
+::: {#project-table}
+:::
+
+## Why Listings work well for a portfolio
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-4 .hover-card}
+#### Easy to grow
+New work goes in a new file. Nothing else on the site needs editing.
+:::
+::: {.g-col-12 .g-col-md-4 .hover-card}
+#### Easy to browse
+Categories let a recruiter jump straight to what they care about, like PPC or events.
+:::
+::: {.g-col-12 .g-col-md-4 .hover-card}
+#### Consistent
+Every card follows the same layout, so the page stays clean no matter how many projects I add.
+:::
+:::

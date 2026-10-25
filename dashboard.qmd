@@ -1,0 +1,212 @@
+---
+title: "EFCU Member Satisfaction Dashboard"
+author: "Aldo Naranjo"
+format:
+  dashboard:
+    orientation: rows
+    scrolling: true
+    include-in-header:
+      text: '<script src="assets/plotly.min.js"></script>'
+resources:
+  - assets/plotly.min.js
+---
+
+```{python}
+#| label: setup
+from IPython.display import HTML
+import pyreadstat
+import pandas as pd
+import plotly.express as px
+import plotly.io as pio
+from IPython.display import HTML
+
+pio.templates.default = "plotly_white"
+TEAL, TEAL_LT, CHARCOAL = "#00695C", "#80CBC4", "#333333"
+
+df, meta = pyreadstat.read_sav("data/case31-efcu.sav")
+n = len(df)
+
+def tidy_fig(fig, height=None):
+    fig = fig.update_layout(
+        margin=dict(l=10, r=10, t=10, b=10),
+        font=dict(family="Arial", color=CHARCOAL, size=13),
+        showlegend=fig.layout.showlegend,
+    )
+    if height:
+        fig.update_layout(height=height)
+    fig = fig.update_layout(autosize=True)
+    return HTML(fig.to_html(full_html=False, include_plotlyjs=False,
+                            default_height="100%", default_width="100%",
+                            config={"responsive": True, "displaylogo": False}))
+
+# Employee attributes (1 = Strongly Disagree, 5 = Strongly Agree)
+emp_items = {"q3": "Courteous", "q4": "Helpful", "q5": "Professional", "q6": "Available"}
+emp = (df[list(emp_items)].mean().rename(index=emp_items)
+         .reset_index().set_axis(["Attribute", "Average"], axis=1)
+         .sort_values("Average"))
+
+# Credit union statements (1 = Strongly Disagree, 5 = Strongly Agree)
+cu_items = {"q31": "Keeps accounts confidential", "q32": "Is prompt",
+            "q33": "Meets members' needs", "q34": "Loan applications are simple",
+            "q30": "Rates are lower than others"}
+cu = (df[list(cu_items)].mean().rename(index=cu_items)
+        .reset_index().set_axis(["Statement", "Average"], axis=1)
+        .sort_values("Average"))
+
+# Overall rating (6 = No Opinion and blanks are left out)
+overall_labels = {1: "Excellent", 2: "Good", 3: "Average", 4: "Poor", 5: "Very Poor"}
+overall = (df["q37"].map(overall_labels).value_counts()
+             .reindex(list(overall_labels.values()), fill_value=0)
+             .reset_index().set_axis(["Rating", "Members"], axis=1))
+rated = overall["Members"].sum()
+pct_top2 = overall.loc[overall["Rating"].isin(["Excellent", "Good"]), "Members"].sum() / rated
+
+emp_score = df["employeeperformance"].mean()
+pct_loan = (df["q27"] == 1).mean()
+```
+
+# Overview
+
+## Row {height="170px"}
+
+```{python}
+#| content: valuebox
+#| title: "Members surveyed"
+dict(icon="people-fill", color="light", value=n)
+```
+
+```{python}
+#| content: valuebox
+#| title: "Employee performance score (out of 5)"
+dict(icon="person-check-fill", color="light", value=f"{emp_score:.2f}")
+```
+
+```{python}
+#| content: valuebox
+#| title: "Rate the credit union Excellent or Good"
+dict(icon="star-fill", color="light", value=f"{pct_top2:.0%}")
+```
+
+```{python}
+#| content: valuebox
+#| title: "Currently have a loan"
+dict(icon="cash-coin", color="light", value=f"{pct_loan:.0%}")
+```
+
+## Row {height="400px"}
+
+```{python}
+#| title: "How members rate employees (average, 1 to 5)"
+fig = px.bar(emp, x="Average", y="Attribute", orientation="h", text="Average",
+             color_discrete_sequence=[TEAL])
+fig = fig.update_traces(texttemplate="%{text:.2f}", textposition="outside")
+fig = fig.update_xaxes(range=[1, 5.4], title="1 = Strongly Disagree, 5 = Strongly Agree")
+fig = fig.update_yaxes(title=None)
+tidy_fig(fig)
+```
+
+```{python}
+#| title: "How members see the credit union (average, 1 to 5)"
+colors = [TEAL_LT if s == "Rates are lower than others" else TEAL for s in cu["Statement"]]
+fig = px.bar(cu, x="Average", y="Statement", orientation="h", text="Average")
+fig = fig.update_traces(marker_color=colors, texttemplate="%{text:.2f}", textposition="outside")
+fig = fig.update_xaxes(range=[1, 5.4], title="1 = Strongly Disagree, 5 = Strongly Agree")
+fig = fig.update_yaxes(title=None)
+tidy_fig(fig)
+```
+
+## Row {height="400px"}
+
+```{python}
+#| title: "Overall rating of the credit union"
+fig = px.bar(overall, x="Rating", y="Members", text="Members",
+             color_discrete_sequence=[TEAL])
+fig = fig.update_traces(textposition="outside")
+fig = fig.update_yaxes(title="Members", range=[0, overall["Members"].max() * 1.2])
+fig = fig.update_xaxes(title=None)
+tidy_fig(fig)
+```
+
+```{python}
+#| title: "Headquarters members (dark) vs. other members (light)"
+hq = (df.assign(Group=df["q38"].map({1: "Headquarters", 2: "Other location"}))
+        .groupby("Group")[["employeeperformance", "q32", "q33", "q34"]].mean()
+        .rename(columns={"employeeperformance": "Employee score",
+                         "q32": "Prompt", "q33": "Meets needs",
+                         "q34": "Simple loan apps"})
+        .reset_index()
+        .melt(id_vars="Group", var_name="Measure", value_name="Average"))
+fig = px.bar(hq, x="Measure", y="Average", color="Group", barmode="group",
+             text="Average", color_discrete_sequence=[TEAL, TEAL_LT])
+fig = fig.update_traces(texttemplate="%{text:.2f}", textposition="outside")
+fig = fig.update_yaxes(range=[1, 5.2], title="Average (1 to 5)")
+fig = fig.update_xaxes(title=None)
+fig = fig.update_layout(showlegend=False)
+tidy_fig(fig)
+```
+
+# Statements
+
+## Row {height="460px"}
+
+```{python}
+#| title: "Is statement frequency right?"
+freq_labels = {1: "Too Often", 2: "Very Often", 3: "About Right", 4: "Not Often Enough", 5: "Never"}
+freq = (df["q9"].map(freq_labels).value_counts()
+          .reset_index().set_axis(["Response", "Members"], axis=1))
+fig = px.pie(freq, names="Response", values="Members", hole=0.55,
+             color_discrete_sequence=[TEAL, TEAL_LT, "#B2DFDB"])
+fig = fig.update_traces(textinfo="percent+label")
+fig = fig.update_layout(showlegend=False)
+tidy_fig(fig)
+```
+
+```{python}
+#| title: "How accurate are statements?"
+acc_labels = {1: "Excellent", 2: "Good", 3: "Fair", 4: "Poor"}
+acc = (df["q10"].map(acc_labels).value_counts()
+         .reindex(list(acc_labels.values()), fill_value=0)
+         .reset_index().set_axis(["Rating", "Members"], axis=1))
+fig = px.bar(acc, x="Rating", y="Members", text="Members", color_discrete_sequence=[TEAL])
+fig = fig.update_traces(textposition="outside")
+fig = fig.update_yaxes(range=[0, acc["Members"].max() * 1.2])
+fig = fig.update_xaxes(title=None)
+tidy_fig(fig)
+```
+
+```{python}
+#| title: "Are statements easy to understand?"
+und = (df["q11"].map({1: "Yes", 2: "No"}).value_counts()
+         .reset_index().set_axis(["Response", "Members"], axis=1))
+fig = px.pie(und, names="Response", values="Members", hole=0.55,
+             color_discrete_sequence=[TEAL, TEAL_LT])
+fig = fig.update_traces(textinfo="percent+label")
+fig = fig.update_layout(showlegend=False)
+tidy_fig(fig)
+```
+
+# Data
+
+```{python}
+#| title: "Survey responses used in this dashboard"
+cols = {"q3": "Courteous", "q4": "Helpful", "q5": "Professional", "q6": "Available",
+        "employeeperformance": "Employee score", "q30": "Lower rates",
+        "q31": "Confidential", "q32": "Prompt", "q33": "Meets needs",
+        "q34": "Simple loan apps", "q37": "Overall rating (1 = Excellent)",
+        "q27": "Has loan (1 = Yes)", "q38": "Headquarters (1 = Yes)"}
+HTML(df[list(cols)].rename(columns=cols).to_html(index=False, classes="table table-sm table-striped", float_format="{:.2f}".format, na_rep="No answer"))
+```
+
+```{python}
+#| title: "About this data"
+#| output: asis
+print("""
+**Source:** Case 31, an employee credit union (EFCU) member survey provided for this course, with 128 respondents.
+
+**Scales:** Employee and credit union items use 1 = Strongly Disagree to 5 = Strongly Agree. The employee score is the average of the four employee items.
+
+**Left out on purpose:** Overall ratings of "No Opinion" and blank answers are excluded from the overall rating chart. The product awareness questions (Q13 to Q26) contain a third answer code that has no label in the data file, so they are not charted until that code can be confirmed.
+
+**Why this data:** My CEP client data from Cal Poly Pomona's Collins College has not arrived yet, so this dashboard uses the course case data to show the same kind of survey reporting I will build for the CEP.
+""")
+```

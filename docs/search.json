@@ -1,0 +1,282 @@
+[
+  {
+    "objectID": "projects/wellness-ranch.html",
+    "href": "projects/wellness-ranch.html",
+    "title": "Wellness Ranch: Digital Strategy for a Nonprofit",
+    "section": "",
+    "text": "Role: Digital Marketing Consultant, Cal Poly Pomona paid micro internship (two person team)\nTimeline: Aug 2025 to May 2026"
+  },
+  {
+    "objectID": "projects/wellness-ranch.html#the-challenge",
+    "href": "projects/wellness-ranch.html#the-challenge",
+    "title": "Wellness Ranch: Digital Strategy for a Nonprofit",
+    "section": "The challenge",
+    "text": "The challenge\nWellness Ranch offers equine assisted therapy. The work showed that the real bottleneck wasn’t finding clients, it was finding donors to fund the service."
+  },
+  {
+    "objectID": "projects/wellness-ranch.html#what-i-delivered",
+    "href": "projects/wellness-ranch.html#what-i-delivered",
+    "title": "Wellness Ranch: Digital Strategy for a Nonprofit",
+    "section": "What I delivered",
+    "text": "What I delivered\n\nA digital marketing strategy with market segmentation, a SWOT analysis, and integrated channel recommendations\nA brand positioning framework built around the person to person nature of the therapy\nA segmented email strategy for donors, current clients, and prospective clients\nSEMrush SEO work: keyword research, on page recommendations, and tracking\nA client presentation with a phased action plan"
+  },
+  {
+    "objectID": "projects/wellness-ranch.html#key-numbers-from-the-seo-audit",
+    "href": "projects/wellness-ranch.html#key-numbers-from-the-seo-audit",
+    "title": "Wellness Ranch: Digital Strategy for a Nonprofit",
+    "section": "Key numbers from the SEO audit",
+    "text": "Key numbers from the SEO audit\n\n\n\nMeasure\nFinding\n\n\n\n\nSite health\n87%, with 0 critical errors\n\n\nMobile vs. desktop performance\n65 vs. 92\n\n\nHomepage word count\n169 vs. about 920 for competitors\n\n\nImages missing alt text\n25 of 97"
+  },
+  {
+    "objectID": "projects/lakewood-halloween.html",
+    "href": "projects/lakewood-halloween.html",
+    "title": "City of Lakewood Halloween Event",
+    "section": "",
+    "text": "Role: Recreation Leader, City of Lakewood\nTimeline: Aug 2022 to Dec 2023"
+  },
+  {
+    "objectID": "projects/lakewood-halloween.html#what-i-did",
+    "href": "projects/lakewood-halloween.html#what-i-did",
+    "title": "City of Lakewood Halloween Event",
+    "section": "What I did",
+    "text": "What I did\n\nDesigned and ran the games and activities segment of the city’s Halloween event, which drew about 1,000 attendees\nSupervised the volunteers staffing the activities\nCoordinated youth sports leagues in basketball, volleyball, flag football, and adult baseball, handling registration, scheduling, equipment, and volunteer coach recruitment"
+  },
+  {
+    "objectID": "projects/lakewood-halloween.html#why-it-matters-for-marketing",
+    "href": "projects/lakewood-halloween.html#why-it-matters-for-marketing",
+    "title": "City of Lakewood Halloween Event",
+    "section": "Why it matters for marketing",
+    "text": "Why it matters for marketing\nEvents are where a brand meets people in person. Planning the flow of a 1,000 person event taught me to think about the attendee experience step by step, which is the same thinking behind a good campaign journey."
+  },
+  {
+    "objectID": "projects/cchm-cep.html",
+    "href": "projects/cchm-cep.html",
+    "title": "Collins College CEP: Application to Enrollment",
+    "section": "",
+    "text": "Program: MSDM Culminating Experience Project, Cal Poly Pomona (Fall 2026 to Summer 2027)\nClient: Collins College of Hospitality Management\nTeam: Four person group; I lead Analytics Objective 3"
+  },
+  {
+    "objectID": "projects/cchm-cep.html#my-objective",
+    "href": "projects/cchm-cep.html#my-objective",
+    "title": "Collins College CEP: Application to Enrollment",
+    "section": "My objective",
+    "text": "My objective\nIdentify where the college loses prospective students between application and enrollment, and which factors most influence the decision to enroll, using admissions data and a survey of current students."
+  },
+  {
+    "objectID": "projects/cchm-cep.html#approach-so-far",
+    "href": "projects/cchm-cep.html#approach-so-far",
+    "title": "Collins College CEP: Application to Enrollment",
+    "section": "Approach so far",
+    "text": "Approach so far\n\nGrounded the work in college choice research, including Hossler and Gallagher’s stage model and Chapman’s model of influences on college choice\nDrafted survey constructs covering significant persons, program and university characteristics, understanding of cost and aid, and outreach before enrollment\nBuilt the dashboard structure on this site so it’s ready when the client data arrives\n\nSee the dashboard prototype"
+  },
+  {
+    "objectID": "css-scss.html",
+    "href": "css-scss.html",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "",
+    "text": "Quarto sites look clean out of the box, but every default site looks a lot like every other one. For a portfolio, the visual identity is part of the message. This site uses the same dark teal, black, and charcoal palette as my resume, so a hiring manager who sees both gets one consistent brand.\nQuarto gives three levels of control, from easiest to most powerful:\n\n\n\n\n\n\n\n\nLevel\nWhat you change\nExample\n\n\n\n\nBuilt in theme\nPick one of 25 Bootswatch themes in _quarto.yml\ntheme: cosmo\n\n\nCSS\nAdd plain style rules on top of a theme\nh2 { color: teal; }\n\n\nSCSS\nChange the theme’s own variables, then add rules\n$primary: #00695C;"
+  },
+  {
+    "objectID": "css-scss.html#why-style-a-quarto-site-at-all",
+    "href": "css-scss.html#why-style-a-quarto-site-at-all",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "",
+    "text": "Quarto sites look clean out of the box, but every default site looks a lot like every other one. For a portfolio, the visual identity is part of the message. This site uses the same dark teal, black, and charcoal palette as my resume, so a hiring manager who sees both gets one consistent brand.\nQuarto gives three levels of control, from easiest to most powerful:\n\n\n\n\n\n\n\n\nLevel\nWhat you change\nExample\n\n\n\n\nBuilt in theme\nPick one of 25 Bootswatch themes in _quarto.yml\ntheme: cosmo\n\n\nCSS\nAdd plain style rules on top of a theme\nh2 { color: teal; }\n\n\nSCSS\nChange the theme’s own variables, then add rules\n$primary: #00695C;"
+  },
+  {
+    "objectID": "css-scss.html#css-vs.-scss-in-plain-terms",
+    "href": "css-scss.html#css-vs.-scss-in-plain-terms",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "CSS vs. SCSS in plain terms",
+    "text": "CSS vs. SCSS in plain terms\nCSS is the language browsers use to style a page. Each rule names an element and says how it should look.\nSCSS (Sass) is CSS with extra tools. The two that matter most for Quarto:\n\nVariables. Define a color once as $brand-teal and reuse it everywhere. Change it in one place and the whole site updates.\nNesting. Write a hover style inside the rule it belongs to instead of repeating the selector.\n\nQuarto themes are built on Bootstrap, which is written in SCSS. That’s why an SCSS file can do more than a CSS file: it can change the theme’s settings before the theme is built, instead of overriding it afterward."
+  },
+  {
+    "objectID": "css-scss.html#step-1-connect-the-scss-file",
+    "href": "css-scss.html#step-1-connect-the-scss-file",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "Step 1: Connect the SCSS file",
+    "text": "Step 1: Connect the SCSS file\nThe theme is set in _quarto.yml. Listing two items layers my file on top of the Cosmo theme:\n\n\n_quarto.yml\n\nformat:\n  html:\n    theme:\n      light: [cosmo, custom.scss]"
+  },
+  {
+    "objectID": "css-scss.html#step-2-the-two-sections-of-an-scss-file",
+    "href": "css-scss.html#step-2-the-two-sections-of-an-scss-file",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "Step 2: The two sections of an SCSS file",
+    "text": "Step 2: The two sections of an SCSS file\nQuarto looks for two special comments in the file. Everything under scss:defaults changes theme variables. Everything under scss:rules adds new styles after the theme is built.\n\n\ncustom.scss (defaults)\n\n/*-- scss:defaults --*/\n$brand-teal:     #00695C;\n$brand-teal-lt:  #E0F2F1;\n$brand-black:    #111111;\n$brand-charcoal: #333333;\n\n$primary:        $brand-teal;      // buttons, links, highlights\n$body-color:     $brand-charcoal;  // paragraph text\n$headings-color: $brand-black;     // h1 to h6\n$link-color:     $brand-teal;\n$font-size-root: 17px;\n$footer-bg:      $brand-teal-lt;\n\nSetting $primary alone recolors buttons, links, active navbar items, and focus outlines across every page, because Bootstrap uses that one variable everywhere."
+  },
+  {
+    "objectID": "css-scss.html#step-3-custom-rules-and-reusable-classes",
+    "href": "css-scss.html#step-3-custom-rules-and-reusable-classes",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "Step 3: Custom rules and reusable classes",
+    "text": "Step 3: Custom rules and reusable classes\nThe rules section adds styles Bootstrap doesn’t have. Here’s the class behind the skill tags on my home page, followed by the card hover effect:\n\n\ncustom.scss (rules)\n\n/*-- scss:rules --*/\n.skill-pill {\n  display: inline-block;\n  background: $brand-teal-lt;\n  color: $brand-teal;\n  border: 1px solid rgba($brand-teal, 0.35);\n  border-radius: 999px;\n  padding: 0.2rem 0.8rem;\n  font-weight: 600;\n}\n\n.hover-card {\n  border: 1px solid #dfe5e4;\n  border-radius: 10px;\n  transition: transform 0.15s ease, box-shadow 0.15s ease;\n  &:hover {                       // nesting: applies to .hover-card:hover\n    transform: translateY(-3px);\n    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);\n  }\n}"
+  },
+  {
+    "objectID": "css-scss.html#step-4-use-the-classes-in-a-page",
+    "href": "css-scss.html#step-4-use-the-classes-in-a-page",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "Step 4: Use the classes in a page",
+    "text": "Step 4: Use the classes in a page\nOnce a class exists, any page can use it with Quarto’s bracket and div syntax. No HTML needed.\n\nWhat I typeWhat you see\n\n\n[Google Ads]{.skill-pill} [SEMrush]{.skill-pill}\n\n::: {.teal-callout}\n**Tip:** this box is styled by a class in custom.scss.\n:::\n\n::: {.hover-card}\nHover over me.\n:::\n\n\nGoogle Ads SEMrush\n\nTip: this box is styled by a class in custom.scss.\n\n\nHover over me."
+  },
+  {
+    "objectID": "css-scss.html#what-id-tell-someone-starting-out",
+    "href": "css-scss.html#what-id-tell-someone-starting-out",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "What I’d tell someone starting out",
+    "text": "What I’d tell someone starting out\n\n\n\n\n\n\nTipPractical tips\n\n\n\n\nStart with a built in theme and only change what bothers you. Most of this site’s look comes from five variables.\nPut colors in variables first. Retyping hex codes leads to slightly different teals on different pages.\nUse the browser’s Inspect tool (right click any element) to find the class name you need to target.\nKeep one SCSS file for the whole site and link it in _quarto.yml, so every page stays consistent."
+  },
+  {
+    "objectID": "dashboard-portal.html",
+    "href": "dashboard-portal.html",
+    "title": "CEP Dashboard",
+    "section": "",
+    "text": "This page is the entry point to my Quarto dashboard. It’s built for my MSDM Culminating Experience Project (CEP), where my part of the work focuses on where Cal Poly Pomona’s Collins College of Hospitality Management loses prospective students between applying and enrolling, and which factors most influence the decision to enroll. Part of that work is a survey of current students.\nThe client data isn’t available yet, so this version uses Case 31, a credit union member survey with 128 respondents. It’s the same kind of data I’ll be reporting on for the CEP: rating scales, yes or no questions, and group comparisons. That makes it a good stand in for building the layout and charts now.\nOpen the full dashboard →"
+  },
+  {
+    "objectID": "dashboard-portal.html#what-youll-find-here",
+    "href": "dashboard-portal.html#what-youll-find-here",
+    "title": "CEP Dashboard",
+    "section": "",
+    "text": "This page is the entry point to my Quarto dashboard. It’s built for my MSDM Culminating Experience Project (CEP), where my part of the work focuses on where Cal Poly Pomona’s Collins College of Hospitality Management loses prospective students between applying and enrolling, and which factors most influence the decision to enroll. Part of that work is a survey of current students.\nThe client data isn’t available yet, so this version uses Case 31, a credit union member survey with 128 respondents. It’s the same kind of data I’ll be reporting on for the CEP: rating scales, yes or no questions, and group comparisons. That makes it a good stand in for building the layout and charts now.\nOpen the full dashboard →"
+  },
+  {
+    "objectID": "dashboard-portal.html#quick-preview",
+    "href": "dashboard-portal.html#quick-preview",
+    "title": "CEP Dashboard",
+    "section": "Quick preview",
+    "text": "Quick preview\n\n\n\nOverview page of the dashboard. Click to open the full interactive version."
+  },
+  {
+    "objectID": "dashboard-portal.html#what-the-data-shows",
+    "href": "dashboard-portal.html#what-the-data-shows",
+    "title": "CEP Dashboard",
+    "section": "What the data shows",
+    "text": "What the data shows\n\n\nEmployees are the strength\nMembers rate staff highly. Courtesy (4.35 out of 5) and helpfulness (4.31) lead, with professionalism and availability close behind at 4.08.\n\n\nOverall satisfaction is strong\n84% of members who gave a rating called the credit union Excellent or Good, and only 3 members rated it Poor or Very Poor.\n\n\nRates are the biggest opportunity\n“Rates are lower than at other institutions” scored 3.06, the lowest of any statement. That points to a messaging or pricing gap worth digging into.\n\n\nLoan applications vary by location\nHeadquarters members gave employees a higher score (4.28 vs. 4.14) but found loan applications less simple (3.28 vs. 3.61) than members at other locations."
+  },
+  {
+    "objectID": "dashboard-portal.html#how-the-dashboard-is-organized",
+    "href": "dashboard-portal.html#how-the-dashboard-is-organized",
+    "title": "CEP Dashboard",
+    "section": "How the dashboard is organized",
+    "text": "How the dashboard is organized\n\n\n\n\n\n\n\nPage\nWhat it shows\n\n\n\n\nOverview\nFour headline numbers, employee ratings, credit union statements, the overall rating, and a headquarters comparison\n\n\nStatements\nWhether statements come often enough, how accurate they are, and whether members understand them\n\n\nData\nA table of the responses used, plus notes on scales and what was left out"
+  },
+  {
+    "objectID": "dashboard-portal.html#how-it-was-built",
+    "href": "dashboard-portal.html#how-it-was-built",
+    "title": "CEP Dashboard",
+    "section": "How it was built",
+    "text": "How it was built\nThe dashboard is a single Quarto file using format: dashboard. Python reads the SPSS file with pyreadstat, pandas calculates the averages and percentages, and plotly draws the interactive charts. Value boxes, rows, and pages are all set with Quarto’s dashboard layout syntax:\nformat:\n  dashboard:\n    orientation: rows\n# Overview          &lt;- a page (tab) of the dashboard\n## Row {height=26%} &lt;- a row of cards on that page\nWhen the CEP data arrives, the same structure can be pointed at the Collins College admissions and survey data with only the column names changing."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Aldo Naranjo",
+    "section": "",
+    "text": "I’m a PPC Analyst and a graduate student in Cal Poly Pomona’s MS in Digital Marketing program, based in the Cerritos and Lakewood area of Southern California. I started out in theater at USC, and that background still shapes how I approach marketing: I think about audiences, timing, and the story a brand is telling before I think about the channel. I’m bilingual in English and Spanish."
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "Aldo Naranjo",
+    "section": "Skills",
+    "text": "Skills\nGoogle Ads Google Analytics 4 Google Tag Manager SEMrush SEO Excel pivot tables SQL and BigQuery R and Quarto Client reporting Event operations Bilingual English and Spanish\nCertifications: Google Analytics, Google Ads, SEMrush SEO Toolkit, SEMrush Content Marketing, HubSpot Inbound, Email Marketing, Digital Marketing, Digital Advertising Strategy, and Excel Pivot Tables."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Aldo Naranjo",
+    "section": "Education",
+    "text": "Education\n\n\nMS in Digital Marketing\nCal Poly Pomona\nAug 2025 to Aug 2027 (expected)\n\n\nBA in Theater, Minor in Cinematic Arts\nUniversity of Southern California"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Aldo Naranjo",
+    "section": "Experience",
+    "text": "Experience\nPPC Analyst, Unbiazed LLC, Brea, CA | Feb 2026 to present\nManage Google Ads accounts for local service businesses, set up conversion tracking in Google Tag Manager, and build monthly client reports.\nDigital Marketing Consultant, Wellness Ranch (Cal Poly Pomona micro internship) | Aug 2025 to May 2026\nBuilt a digital marketing strategy, brand positioning framework, and segmented email plan for a nonprofit equine therapy client, and presented a phased action plan.\nRecreation Leader, City of Lakewood | Aug 2022 to Dec 2023\nRan the games and activities segment of a Halloween event with about 1,000 attendees and coordinated youth sports leagues.\nEvent Operations Staff, USC Athletics | Jan 2022 to May 2022\nHandled game day setup, ticket check in, and media check in."
+  },
+  {
+    "objectID": "index.html#explore-this-site",
+    "href": "index.html#explore-this-site",
+    "title": "Aldo Naranjo",
+    "section": "Explore this site",
+    "text": "Explore this site\n\nCEP Dashboard: an interactive Quarto dashboard built from survey data.\nStyling with CSS/SCSS: how this site’s look was built, with the actual code.\nListings: how Quarto Listings work, shown with my own project cards."
+  },
+  {
+    "objectID": "listings.html",
+    "href": "listings.html",
+    "title": "Listings in Quarto",
+    "section": "",
+    "text": "A Listing is a Quarto feature that builds a page of links to other pages automatically. Instead of hand typing a list of projects and updating it every time something new is added, you point the Listing at a folder. Quarto reads each file’s title, description, image, and categories, then builds the cards for you.\nFor a portfolio, that means adding a new project is as simple as dropping a new .qmd file into the projects/ folder. The cards, the filters, and the sorting all update on the next render."
+  },
+  {
+    "objectID": "listings.html#what-is-a-listing",
+    "href": "listings.html#what-is-a-listing",
+    "title": "Listings in Quarto",
+    "section": "",
+    "text": "A Listing is a Quarto feature that builds a page of links to other pages automatically. Instead of hand typing a list of projects and updating it every time something new is added, you point the Listing at a folder. Quarto reads each file’s title, description, image, and categories, then builds the cards for you.\nFor a portfolio, that means adding a new project is as simple as dropping a new .qmd file into the projects/ folder. The cards, the filters, and the sorting all update on the next render."
+  },
+  {
+    "objectID": "listings.html#my-projects-a-live-listing",
+    "href": "listings.html#my-projects-a-live-listing",
+    "title": "Listings in Quarto",
+    "section": "My projects (a live Listing)",
+    "text": "My projects (a live Listing)\nClick a category on the right to filter, or click any card to open the full write up.\n\n\n\n\n\n\n\n\n\n\nCollins College CEP: Application to Enrollment\n\n\n\nResearch\n\nSurvey Design\n\nHigher Ed\n\nIn Progress\n\n\n\nCapstone research on where a hospitality college loses prospective students between applying and enrolling.\n\n\n\n\n\n\n\n\n\n\n\n\nGoogle Ads Turnaround: 3x Monthly Leads\n\n\n\nGoogle Ads\n\nPPC\n\nLead Generation\n\n\n\nRebuilding a lead generation account by fixing the bidding strategy order.\n\n\n\n\n\n\n\n\n\n\n\n\nWellness Ranch: Digital Strategy for a Nonprofit\n\n\n\nStrategy\n\nSEO\n\nEmail\n\nNonprofit\n\n\n\nA brand positioning framework, segmented email plan, and SEO audit for an equine assisted therapy nonprofit.\n\n\n\n\n\n\n\n\n\n\n\n\nSQL and BigQuery Learning Portfolio\n\n\n\nSQL\n\nBigQuery\n\nQuarto\n\nAnalytics\n\n\n\nThree DataCamp courses documented as a reusable reference, published with Quarto and GitHub Pages.\n\n\n\n\n\n\n\n\n\n\n\n\nCity of Lakewood Halloween Event\n\n\n\nEvents\n\nCommunity\n\nOperations\n\n\n\nRunning the games and activities segment for about 1,000 attendees.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "listings.html#how-this-listing-is-built",
+    "href": "listings.html#how-this-listing-is-built",
+    "title": "Listings in Quarto",
+    "section": "How this Listing is built",
+    "text": "How this Listing is built\n\n1. Each project is its own page\nEvery card above comes from a file in projects/. The YAML at the top is what the Listing reads:\n\n\nprojects/google-ads.qmd\n\n---\ntitle: \"Google Ads Turnaround: 3x Monthly Leads\"\ndescription: \"Rebuilding a lead generation account by fixing the bidding strategy order.\"\nimage: images/google-ads.png\ncategories: [Google Ads, PPC, Lead Generation]\norder: 2\n---\n\n\n\n2. The Listing page tells Quarto what to collect\nThe YAML on this page sets where to look and how to display what it finds:\n\n\nlistings.qmd\n\nlisting:\n  - id: project-grid\n    contents: projects/*.qmd     # every .qmd file in the folder\n    type: grid                   # cards in columns\n    sort: \"order\"                # uses the order field in each file\n    categories: unnumbered       # adds the clickable category filter\n    fields: [image, title, description, categories]\n    grid-columns: 3\n\n\n\n3. A div marks where it appears\nThe id connects the settings to a spot on the page, so one page can hold more than one Listing:\n::: {#project-grid}\n:::"
+  },
+  {
+    "objectID": "listings.html#three-listing-types",
+    "href": "listings.html#three-listing-types",
+    "title": "Listings in Quarto",
+    "section": "Three Listing types",
+    "text": "Three Listing types\nThe same project files can be shown in different ways just by changing type:\n\n\n\n\n\n\n\n\nType\nBest for\nWhat it looks like\n\n\n\n\ndefault\nBlogs and news\nA vertical list with a thumbnail and summary\n\n\ngrid\nPortfolios\nCards in columns, as above\n\n\ntable\nQuick scanning\nRows with sortable columns, as below\n\n\n\nHere’s the same set of projects as a table Listing:\n\n\n\n\n\n\nProject\n\n\n\nTopics\n\n\n\n\n\n\n\n\nCollins College CEP: Application to Enrollment\n\n\nResearch, Survey Design, Higher Ed, In Progress\n\n\n\n\n\n\nGoogle Ads Turnaround: 3x Monthly Leads\n\n\nGoogle Ads, PPC, Lead Generation\n\n\n\n\n\n\nWellness Ranch: Digital Strategy for a Nonprofit\n\n\nStrategy, SEO, Email, Nonprofit\n\n\n\n\n\n\nSQL and BigQuery Learning Portfolio\n\n\nSQL, BigQuery, Quarto, Analytics\n\n\n\n\n\n\nCity of Lakewood Halloween Event\n\n\nEvents, Community, Operations\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "listings.html#why-listings-work-well-for-a-portfolio",
+    "href": "listings.html#why-listings-work-well-for-a-portfolio",
+    "title": "Listings in Quarto",
+    "section": "Why Listings work well for a portfolio",
+    "text": "Why Listings work well for a portfolio\n\n\nEasy to grow\nNew work goes in a new file. Nothing else on the site needs editing.\n\n\nEasy to browse\nCategories let a recruiter jump straight to what they care about, like PPC or events.\n\n\nConsistent\nEvery card follows the same layout, so the page stays clean no matter how many projects I add."
+  },
+  {
+    "objectID": "projects/google-ads.html",
+    "href": "projects/google-ads.html",
+    "title": "Google Ads Turnaround: 3x Monthly Leads",
+    "section": "",
+    "text": "Role: PPC Analyst, Unbiazed LLC\nAccount: Waste management lead generation"
+  },
+  {
+    "objectID": "projects/google-ads.html#the-problem",
+    "href": "projects/google-ads.html#the-problem",
+    "title": "Google Ads Turnaround: 3x Monthly Leads",
+    "section": "The problem",
+    "text": "The problem\nI inherited the account on a Maximize Conversions bid strategy, but it didn’t have enough conversion data for Google’s automated bidding to learn from. Volume stayed low."
+  },
+  {
+    "objectID": "projects/google-ads.html#what-i-changed",
+    "href": "projects/google-ads.html#what-i-changed",
+    "title": "Google Ads Turnaround: 3x Monthly Leads",
+    "section": "What I changed",
+    "text": "What I changed\n\nSwitched to Maximize Clicks to build traffic and give the account conversion history.\nWatched conversion volume until there was enough data to support smart bidding.\nMoved back to conversion based bidding once the data could carry it."
+  },
+  {
+    "objectID": "projects/google-ads.html#the-result",
+    "href": "projects/google-ads.html#the-result",
+    "title": "Google Ads Turnaround: 3x Monthly Leads",
+    "section": "The result",
+    "text": "The result\nMonthly leads roughly tripled. The lesson: automated bidding needs data first, so sometimes the fastest route to more conversions is to stop optimizing for them for a while."
+  },
+  {
+    "objectID": "projects/sql-portfolio.html",
+    "href": "projects/sql-portfolio.html",
+    "title": "SQL and BigQuery Learning Portfolio",
+    "section": "",
+    "text": "Course: IBM 6500, Cal Poly Pomona\nA three report site documenting what I learned in Introduction to SQL, Introduction to BigQuery, and Intermediate SQL. Each report pairs the syntax with marketing examples, like calculating click through rate, cost per click, and channel share of spend.\nView the live portfolio\n\n\n\n Back to top"
+  }
+]

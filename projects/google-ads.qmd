@@ -1,0 +1,24 @@
+---
+title: "Google Ads Turnaround: 3x Monthly Leads"
+description: "Rebuilding a lead generation account by fixing the bidding strategy order."
+order: 2
+image: images/google-ads.png
+categories: [Google Ads, PPC, Lead Generation]
+---
+
+**Role:** PPC Analyst, Unbiazed LLC\
+**Account:** Waste management lead generation
+
+## The problem
+
+I inherited the account on a Maximize Conversions bid strategy, but it didn't have enough conversion data for Google's automated bidding to learn from. Volume stayed low.
+
+## What I changed
+
+1. Switched to **Maximize Clicks** to build traffic and give the account conversion history.
+2. Watched conversion volume until there was enough data to support smart bidding.
+3. Moved back to **conversion based bidding** once the data could carry it.
+
+## The result
+
+Monthly leads roughly **tripled**. The lesson: automated bidding needs data first, so sometimes the fastest route to more conversions is to stop optimizing for them for a while.

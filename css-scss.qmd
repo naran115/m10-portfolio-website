@@ -1,0 +1,130 @@
+---
+title: "Styling a Quarto Website with CSS/SCSS"
+subtitle: "How this site gets its look, using the actual code behind it"
+---
+
+## Why style a Quarto site at all?
+
+Quarto sites look clean out of the box, but every default site looks a lot like every other one. For a portfolio, the visual identity is part of the message. This site uses the same dark teal, black, and charcoal palette as my resume, so a hiring manager who sees both gets one consistent brand.
+
+Quarto gives three levels of control, from easiest to most powerful:
+
+| Level | What you change | Example |
+|:--|:--|:--|
+| **Built in theme** | Pick one of 25 Bootswatch themes in `_quarto.yml` | `theme: cosmo` |
+| **CSS** | Add plain style rules on top of a theme | `h2 { color: teal; }` |
+| **SCSS** | Change the theme's own variables, then add rules | `$primary: #00695C;` |
+
+## CSS vs. SCSS in plain terms
+
+**CSS** is the language browsers use to style a page. Each rule names an element and says how it should look.
+
+**SCSS** (Sass) is CSS with extra tools. The two that matter most for Quarto:
+
+- **Variables.** Define a color once as `$brand-teal` and reuse it everywhere. Change it in one place and the whole site updates.
+- **Nesting.** Write a hover style inside the rule it belongs to instead of repeating the selector.
+
+Quarto themes are built on Bootstrap, which is written in SCSS. That's why an SCSS file can do more than a CSS file: it can change the theme's settings *before* the theme is built, instead of overriding it afterward.
+
+## Step 1: Connect the SCSS file
+
+The theme is set in `_quarto.yml`. Listing two items layers my file on top of the Cosmo theme:
+
+```{.yaml filename="_quarto.yml"}
+format:
+  html:
+    theme:
+      light: [cosmo, custom.scss]
+```
+
+## Step 2: The two sections of an SCSS file
+
+Quarto looks for two special comments in the file. Everything under `scss:defaults` changes theme variables. Everything under `scss:rules` adds new styles after the theme is built.
+
+```{.scss filename="custom.scss (defaults)"}
+/*-- scss:defaults --*/
+$brand-teal:     #00695C;
+$brand-teal-lt:  #E0F2F1;
+$brand-black:    #111111;
+$brand-charcoal: #333333;
+
+$primary:        $brand-teal;      // buttons, links, highlights
+$body-color:     $brand-charcoal;  // paragraph text
+$headings-color: $brand-black;     // h1 to h6
+$link-color:     $brand-teal;
+$font-size-root: 17px;
+$footer-bg:      $brand-teal-lt;
+```
+
+Setting `$primary` alone recolors buttons, links, active navbar items, and focus outlines across every page, because Bootstrap uses that one variable everywhere.
+
+## Step 3: Custom rules and reusable classes
+
+The rules section adds styles Bootstrap doesn't have. Here's the class behind the skill tags on my home page, followed by the card hover effect:
+
+```{.scss filename="custom.scss (rules)"}
+/*-- scss:rules --*/
+.skill-pill {
+  display: inline-block;
+  background: $brand-teal-lt;
+  color: $brand-teal;
+  border: 1px solid rgba($brand-teal, 0.35);
+  border-radius: 999px;
+  padding: 0.2rem 0.8rem;
+  font-weight: 600;
+}
+
+.hover-card {
+  border: 1px solid #dfe5e4;
+  border-radius: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  &:hover {                       // nesting: applies to .hover-card:hover
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+}
+```
+
+## Step 4: Use the classes in a page
+
+Once a class exists, any page can use it with Quarto's bracket and div syntax. No HTML needed.
+
+::: {.panel-tabset}
+
+### What I type
+
+```{.markdown}
+[Google Ads]{.skill-pill} [SEMrush]{.skill-pill}
+
+::: {.teal-callout}
+**Tip:** this box is styled by a class in custom.scss.
+:::
+
+::: {.hover-card}
+Hover over me.
+:::
+```
+
+### What you see
+
+[Google Ads]{.skill-pill} [SEMrush]{.skill-pill}
+
+::: {.teal-callout}
+**Tip:** this box is styled by a class in custom.scss.
+:::
+
+::: {.hover-card}
+Hover over me.
+:::
+
+:::
+
+## What I'd tell someone starting out
+
+::: {.callout-tip}
+## Practical tips
+1. **Start with a built in theme** and only change what bothers you. Most of this site's look comes from five variables.
+2. **Put colors in variables first.** Retyping hex codes leads to slightly different teals on different pages.
+3. **Use the browser's Inspect tool** (right click any element) to find the class name you need to target.
+4. **Keep one SCSS file for the whole site** and link it in `_quarto.yml`, so every page stays consistent.
+:::

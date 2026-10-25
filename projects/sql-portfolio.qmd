@@ -1,0 +1,13 @@
+---
+title: "SQL and BigQuery Learning Portfolio"
+description: "Three DataCamp courses documented as a reusable reference, published with Quarto and GitHub Pages."
+order: 4
+image: images/sql-portfolio.png
+categories: [SQL, BigQuery, Quarto, Analytics]
+---
+
+**Course:** IBM 6500, Cal Poly Pomona
+
+A three report site documenting what I learned in Introduction to SQL, Introduction to BigQuery, and Intermediate SQL. Each report pairs the syntax with marketing examples, like calculating click through rate, cost per click, and channel share of spend.
+
+[View the live portfolio](https://naran115.github.io/ibm-6500-sql-learning-portfolio/index.html){.big-button}

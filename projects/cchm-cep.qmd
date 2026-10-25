@@ -1,0 +1,23 @@
+---
+title: "Collins College CEP: Application to Enrollment"
+description: "Capstone research on where a hospitality college loses prospective students between applying and enrolling."
+order: 1
+image: images/cchm-cep.png
+categories: [Research, Survey Design, Higher Ed, In Progress]
+---
+
+**Program:** MSDM Culminating Experience Project, Cal Poly Pomona (Fall 2026 to Summer 2027)\
+**Client:** Collins College of Hospitality Management\
+**Team:** Four person group; I lead Analytics Objective 3
+
+## My objective
+
+Identify where the college loses prospective students between application and enrollment, and which factors most influence the decision to enroll, using admissions data and a survey of current students.
+
+## Approach so far
+
+- Grounded the work in college choice research, including Hossler and Gallagher's stage model and Chapman's model of influences on college choice
+- Drafted survey constructs covering significant persons, program and university characteristics, understanding of cost and aid, and outreach before enrollment
+- Built the dashboard structure on this site so it's ready when the client data arrives
+
+[See the dashboard prototype](../dashboard-portal.qmd){.big-button}

@@ -1,0 +1,63 @@
+---
+title: "Aldo Naranjo"
+subtitle: "Digital marketer moving toward brand marketing, PR, and events"
+image: images/aldo-headshot.jpg
+toc: false
+about:
+  template: trestles
+  image-shape: rounded
+  image-width: 17em
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/aldonaranjo
+    - icon: github
+      text: GitHub
+      href: https://github.com/naran115
+---
+
+I'm a PPC Analyst and a graduate student in Cal Poly Pomona's MS in Digital Marketing program, based in the Cerritos and Lakewood area of Southern California. I started out in theater at USC, and that background still shapes how I approach marketing: I think about audiences, timing, and the story a brand is telling before I think about the channel. I'm bilingual in English and Spanish.
+
+::: {.teal-callout}
+**What I'm working toward.** I want to grow into brand marketing roles that lead into PR and events, especially in entertainment, sports, music and the arts, lifestyle, food and beverage, and gaming. My day job taught me how to read performance data; the next step is using that discipline to build campaigns people actually remember.
+:::
+
+## Skills
+
+[Google Ads]{.skill-pill} [Google Analytics 4]{.skill-pill} [Google Tag Manager]{.skill-pill} [SEMrush]{.skill-pill} [SEO]{.skill-pill} [Excel pivot tables]{.skill-pill} [SQL and BigQuery]{.skill-pill} [R and Quarto]{.skill-pill} [Client reporting]{.skill-pill} [Event operations]{.skill-pill} [Bilingual English and Spanish]{.skill-pill}
+
+**Certifications:** Google Analytics, Google Ads, SEMrush SEO Toolkit, SEMrush Content Marketing, HubSpot Inbound, Email Marketing, Digital Marketing, Digital Advertising Strategy, and Excel Pivot Tables.
+
+## Education
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6 .hover-card}
+**MS in Digital Marketing**\
+Cal Poly Pomona\
+Aug 2025 to Aug 2027 (expected)
+:::
+::: {.g-col-12 .g-col-md-6 .hover-card}
+**BA in Theater, Minor in Cinematic Arts**\
+University of Southern California
+:::
+:::
+
+## Experience
+
+**PPC Analyst**, Unbiazed LLC, Brea, CA | Feb 2026 to present\
+Manage Google Ads accounts for local service businesses, set up conversion tracking in Google Tag Manager, and build monthly client reports.
+
+**Digital Marketing Consultant**, Wellness Ranch (Cal Poly Pomona micro internship) | Aug 2025 to May 2026\
+Built a digital marketing strategy, brand positioning framework, and segmented email plan for a nonprofit equine therapy client, and presented a phased action plan.
+
+**Recreation Leader**, City of Lakewood | Aug 2022 to Dec 2023\
+Ran the games and activities segment of a Halloween event with about 1,000 attendees and coordinated youth sports leagues.
+
+**Event Operations Staff**, USC Athletics | Jan 2022 to May 2022\
+Handled game day setup, ticket check in, and media check in.
+
+## Explore this site
+
+- **[CEP Dashboard](dashboard-portal.qmd):** an interactive Quarto dashboard built from survey data.
+- **[Styling with CSS/SCSS](css-scss.qmd):** how this site's look was built, with the actual code.
+- **[Listings](listings.qmd):** how Quarto Listings work, shown with my own project cards.

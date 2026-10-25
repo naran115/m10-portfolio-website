@@ -1,0 +1,31 @@
+---
+title: "Wellness Ranch: Digital Strategy for a Nonprofit"
+description: "A brand positioning framework, segmented email plan, and SEO audit for an equine assisted therapy nonprofit."
+order: 3
+image: images/wellness-ranch.png
+categories: [Strategy, SEO, Email, Nonprofit]
+---
+
+**Role:** Digital Marketing Consultant, Cal Poly Pomona paid micro internship (two person team)\
+**Timeline:** Aug 2025 to May 2026
+
+## The challenge
+
+Wellness Ranch offers equine assisted therapy. The work showed that the real bottleneck wasn't finding clients, it was finding donors to fund the service.
+
+## What I delivered
+
+- A digital marketing strategy with market segmentation, a SWOT analysis, and integrated channel recommendations
+- A brand positioning framework built around the person to person nature of the therapy
+- A segmented email strategy for donors, current clients, and prospective clients
+- SEMrush SEO work: keyword research, on page recommendations, and tracking
+- A client presentation with a phased action plan
+
+## Key numbers from the SEO audit
+
+| Measure | Finding |
+|:--|:--|
+| Site health | 87%, with 0 critical errors |
+| Mobile vs. desktop performance | 65 vs. 92 |
+| Homepage word count | 169 vs. about 920 for competitors |
+| Images missing alt text | 25 of 97 |
